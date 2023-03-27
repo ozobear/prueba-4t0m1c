@@ -1,0 +1,41 @@
+.form-container {
+    position: relative;
+    color: white;
+    padding: 2em;
+
+    form {
+        
+        .back-step {margin-top: -3em;}
+        
+        .steps {
+            position: absolute;
+            top: 1rem;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        .form-control {
+
+            p {margin-top: 2.5em;}
+
+            input {
+                width: 70%;
+                height: 45px;
+                color: rgb(0, 7, 37);
+                border-radius: 5px;
+                padding-left: 5px;
+            }
+    
+            button {
+                margin-top: 1em;
+                background: #fa4d09;
+                width: 25%;
+                height: 1.7em;
+                border-radius: 25px;
+                font-weight: 500;
+                right: 5em;
+            }
+
+        }
+    }
+}

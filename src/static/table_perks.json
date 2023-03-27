@@ -1,0 +1,33 @@
+[
+    {
+      "perk": "Equipo inclusivo, honesto y auténtico",
+      "others": true,
+      "atomic": true
+    },
+    {
+      "perk": "Puntualidad es nuestro segundo nombre",
+      "others": true,
+      "atomic": true
+    },
+    {
+      "perk": "Siempre innovamos en nuestros productos",
+      "others": true,
+      "atomic": true
+    },
+    {
+      "perk": "Te ayudamos a crecer e implementar nuevos conocimientos",
+      "others": false,
+      "atomic": true
+    },
+    {
+      "perk": "Nos preocupamos por tu bienestar",
+      "others": false,
+      "atomic": true
+    },
+    {
+      "perk": "El respeto es una parte fundamental",
+      "others": false,
+      "atomic": true
+    }
+  ]
+  

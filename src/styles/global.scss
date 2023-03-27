@@ -1,0 +1,58 @@
+.process {
+    color: white;
+
+    div {
+        grid-template-columns: 250px 60px 250px 60px 250px 60px 250px;
+
+        p {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        img {
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+    }
+    @media screen and (max-width:768px) {
+        div {
+            grid-template-columns: 100%;
+
+            img {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.blue-section {
+    border-radius: 7em 7em 0 0;
+
+    .perks {
+        margin-top: -7em;
+
+        li {
+            color: white;
+            font-size: 20px;
+            list-style: none;
+            background: url('../assets/ic_check_tiny.png') left top no-repeat;
+            padding-left: 2em;
+            line-height: 1.3em;
+        }
+    }
+    .perks:nth-child(n+2) ul {
+        margin-top: 2.2em;
+    }
+    @media screen and (max-width:768px) {
+        img {
+            padding-top: 8em;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: -8em;
+        }
+        ul {
+            margin-bottom: 10em;
+        }
+    }
+}

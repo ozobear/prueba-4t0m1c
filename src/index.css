@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Montserrat, sans-serif;
+}
+
+:root, body {
+  margin: -5px;
+  padding: 0;
+}
+
+.app {
+  background: url('./assets/background.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #072348;
+  width: 100%;
+}
