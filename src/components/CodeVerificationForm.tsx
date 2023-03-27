@@ -1,10 +1,11 @@
-import Astronaut from "../assets/astronaut-moon.png"
-import { useMultiStepForm } from "../customHooks/useMultiStepForm"
-import FormWrapper from "./FormWrapper"
+import Astronaut from "../assets/astronaut-moon.png";
+import FormWrapper from "./FormWrapper";
+import Icon from "../assets/Group 4024.png";
+import { useMultiStepForm } from "../customHooks/useMultiStepForm";
 import "../styles/ContactForm.scss";
 
 type CodeData = {
-    code: string
+    codeVerification: string
 }
 
 type CodeFormProps = CodeData & {
@@ -12,27 +13,27 @@ type CodeFormProps = CodeData & {
 }
 
 export default function CodeVerificationForm({
-    code,
-    updateFields
+    codeVerification,
+    updateFields,
 }: CodeFormProps) {
-    const { isLastStep } = useMultiStepForm([])
+    const {step, isLastStep} = useMultiStepForm([]);
 
     return(
-        <FormWrapper title="Código de Verificación">
+        <FormWrapper icon={Icon} title="Código de Verificación">
         <div className="form-control grid grid-cols-1 lg:grid-cols-3">
             <div className="grid col-span-2">
-                <p>Te enviamos un SMS al número:</p>
+                <p className="mt-10">Te enviamos un SMS al número:</p>
                 <small>Ingresa el código de verificación:</small>
                 <label>Código de verificación</label>
                 <input 
                     autoFocus 
                     required 
                     type="text"
-                    value={code}
-                    onChange={e => updateFields({ code: e.target.value })}
+                    value={codeVerification}
+                    onChange={e => updateFields({ codeVerification: e.target.value })}
                 />
                 <button type="submit">{isLastStep ? "Enviar" : "Continuar"}</button>
-                <p>¿No recibiste el código? <strong>Reenviar código</strong></p>
+                <p className="mt-10 text-base">¿No recibiste el código? <strong>Reenviar código</strong></p>
             </div>
             <div>
                 <img src={Astronaut} alt="Astronaut floating over moon" className="lg:-mt-28" />

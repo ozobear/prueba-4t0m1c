@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="pt-2">
             <span>© {year} AtomicLabs. Todos los derechos reservados.</span>
         </div>
-        <div className="mx-auto block lg:flex gap-x-10 sm:flex-col lg:flex-row lg:justify-end">
+        <div className="mx-auto text-center lg:flex gap-x-10 lg:flex-row lg:justify-end">
             <a href="" className="pt-2">Aviso de privacidad</a>
             <a href=""><img src={LinkedIn} alt="Logo Linkedin AtomicLabs"/></a>
             <a href="" className="pt-1"><img src={Twitter} alt="Logo Twitter AtomicLabs" /></a>

@@ -10,14 +10,14 @@ type FormData = {
     name: string
     lastName: string
     phoneNumber: string
-    code: string
+    codeVerification: string
 }
 
 const INITIAL_DATA: FormData = {
     name: "",
     lastName: "",
     phoneNumber: "",
-    code: "",
+    codeVerification: "",
 }
 
 export default function ContactForm() {
@@ -43,10 +43,14 @@ export default function ContactForm() {
 
     return(
         <>
-        <div className="form-container mx-5 lg:mx-44 my-5 min-h-[150vh] lg:min-h-[70vh]">
+        <div className="form-container px-2 mx-3 lg:mx-44 my-5 min-h-[110vh] lg:min-h-[70vh]">
             <form onSubmit={onSubmit}>
                 <div className="back-step">
-                    {!isFirstStep && <button onClick={back}>Regresar</button>}
+                    {!isFirstStep && (
+                        <button type="button" onClick={back}>
+                            Regresar
+                        </button>
+                    )}
                 </div>
                 <div className="steps">{step}</div>
             </form>

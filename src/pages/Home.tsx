@@ -20,8 +20,8 @@ export default function Home() {
         <span className="text-[#fa4d09]">trabajar con nosotros</span>
         </p>
         <div className="process px-5 lg:px-14 my-20">
-            <img src={People} alt="" />
-            <div className="grid px-10">
+            <img className="w-full" src={People} alt="" />
+            <div className="grid mx-auto px-20">
                 <p>Contratación remota</p>
                 <img src={Arrow} alt="" />
                 <p>Entrevista con el área de RH</p>
