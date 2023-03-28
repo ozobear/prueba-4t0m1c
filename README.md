@@ -1,5 +1,5 @@
 # Proyecto de prueba para vacante de frontend en AtomicLabs
-Este proyecto se encuentra construido con React + Typescript y Vite. Para correr el proyecto en localhost debes realizar un ```sh git clone``` a este repositorio.
+Este proyecto se encuentra construido con React + Typescript y Vite. Para correr el proyecto en localhost debes realizar un ```git clone``` a este repositorio.
 
 Una vez que tengas el proyecto en tu equipo, debes ingresar a la carpeta raíz del mismo y ejecutar el comando ```npm install``` para instalar todas las dependencias del proyecto.
 
